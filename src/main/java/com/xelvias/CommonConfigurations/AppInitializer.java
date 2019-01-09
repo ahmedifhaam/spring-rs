@@ -1,6 +1,5 @@
-package com.xelvias.init;
+package com.xelvias.CommonConfigurations;
 
-import com.xelvias.CommonConfigurations.HibernateConfiguration;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 

@@ -1,7 +1,7 @@
-package com.xelvias;
+package com.xelvias.controllers;
 
 import com.xelvias.models.Person;
-import com.xelvias.services.IPersonService;
+import com.xelvias.services.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +15,7 @@ import java.util.List;
 class PersonController {
 
     @Autowired
-    IPersonService personService;
+    PersonService personService;
 
     @RequestMapping(value={"/person"},method = RequestMethod.GET)
     @ResponseBody

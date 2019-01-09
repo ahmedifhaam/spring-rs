@@ -1,8 +1,8 @@
-package com.xelvias;
+package com.xelvias.extraconfigurations;
 
 import com.xelvias.dao.PersonDao;
 import com.xelvias.dao.PersonDaoImpl;
-import com.xelvias.services.PersonService;
+import com.xelvias.services.PersonServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +17,7 @@ public class configurations {
     }
 
     @Bean
-    public PersonService getPersonService(){
-        return new PersonService();
+    public PersonServiceImpl getPersonService(){
+        return new PersonServiceImpl();
     }
 }

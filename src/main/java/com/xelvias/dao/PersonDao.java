@@ -1,6 +1,13 @@
 package com.xelvias.dao;
 
-public abstract class PersonDao extends AbstractDao {
+import com.xelvias.models.Person;
 
+import java.util.List;
+
+public interface PersonDao {
+
+    void save(Person object);
+
+    public List<Person> findAll();
 
 }
