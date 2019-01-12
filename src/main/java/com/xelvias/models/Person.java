@@ -6,14 +6,14 @@ import javax.persistence.*;
 @Table(name="PERSON")
 public class Person {
     @Id
-    @Column(name="id")
+    @Column(name="ID")
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
 
-    @Column(name="name")
+    @Column(name="NAME")
     private String name;
 
-    @Column(name="country")
+    @Column(name="COUNTRY")
     private String country;
 
     public int getId() {
@@ -44,4 +44,7 @@ public class Person {
     public String toString(){
         return "id="+id+", name="+name+", country="+country;
     }
+
+
+
 }
